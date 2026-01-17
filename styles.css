@@ -191,6 +191,18 @@ a {
   color: var(--muted);
 }
 
+.snapshot-list {
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+  margin: 1.2rem 0 1.4rem;
+  color: var(--muted);
+}
+
+.snapshot-list strong {
+  color: var(--text);
+}
+
 .pill-row {
   display: flex;
   flex-wrap: wrap;
