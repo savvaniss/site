@@ -78,33 +78,6 @@
               <span>Terraform</span>
             </div>
           </div>
-
-          <div class="panel-card quest-card">
-            <div class="quest-header">
-              <h2>Quest log</h2>
-              <p>Complete steps to unlock a badge.</p>
-            </div>
-            <div class="level">
-              <div>
-                <div class="level-label">Level <span id="level">1</span></div>
-                <div class="xp" aria-hidden="true">
-                  <div id="xp-bar" class="xp-bar"></div>
-                </div>
-                <div class="xp-caption"><span id="xp">0</span>/100 XP</div>
-              </div>
-              <button id="reset" class="button ghost small">Reset</button>
-            </div>
-            <ul class="quest-list" id="quest-list">
-              <li data-xp="20">Read the overview</li>
-              <li data-xp="20">Follow the journey map</li>
-              <li data-xp="20">Review certifications</li>
-              <li data-xp="20">Open a project demo</li>
-              <li data-xp="20">Send a hello email</li>
-            </ul>
-            <div class="badge" id="badge" aria-live="polite">
-              ✨ Badge unlocked: Cloud Pathfinder
-            </div>
-          </div>
         </aside>
       </div>
     </header>
@@ -191,33 +164,48 @@
       <section id="certs" class="section">
         <div class="section-title">
           <h2>Certification highlights</h2>
-          <p>Security, cloud, and leadership credentials.</p>
+          <p>All credentials grouped in an accordion list.</p>
         </div>
-        <div class="grid three">
-          <article class="card">
-            <h3>Exam 537 Badge</h3>
+        <div class="accordion">
+          <details open>
+            <summary>Exam 537 Badge · June 25, 2019</summary>
             <p>
-              Issued to <strong>Spyridon Savvanis</strong> · June 25, 2019
-              <br />
-              Configuring and Operating a Hybrid Cloud with Microsoft Azure
-              Stack.
+              Issued to <strong>Spyridon Savvanis</strong> · Configuring and
+              Operating a Hybrid Cloud with Microsoft Azure Stack.
             </p>
-          </article>
-          <article class="card">
-            <h3>Linux Foundation Certified Engineer</h3>
-            <p>Credential ID LFCE-1700-0432-0200 · Issued Dec 2017</p>
-          </article>
-          <article class="card">
-            <h3>Certified Ethical Hacker</h3>
-            <p>Credential ID ECC0658973421 · Issued Feb 2022</p>
-          </article>
-        </div>
-        <div class="chip-grid">
-          <span>Azure Solutions Architect Expert</span>
-          <span>Azure DevOps Engineer Expert</span>
-          <span>Azure Administrator Associate</span>
-          <span>AZ-300 Azure Architect Technologies</span>
-          <span>TypeScript Essential Training</span>
+          </details>
+          <details open>
+            <summary>Linux Foundation Certified Engineer · Dec 2017</summary>
+            <p>Credential ID LFCE-1700-0432-0200</p>
+          </details>
+          <details open>
+            <summary>Certified Ethical Hacker (CEH) · Feb 2022</summary>
+            <p>Credential ID ECC0658973421</p>
+          </details>
+          <details open>
+            <summary>Microsoft Certified: Azure Administrator Associate · Aug 2019</summary>
+            <p>Expired Aug 2021</p>
+          </details>
+          <details open>
+            <summary>Microsoft Certified: Azure DevOps Engineer Expert · Sep 2019</summary>
+            <p>Expired Sep 2021</p>
+          </details>
+          <details open>
+            <summary>Microsoft Certified: Azure Solutions Architect Expert · Aug 2020</summary>
+            <p>Expired Aug 2022</p>
+          </details>
+          <details open>
+            <summary>AZ-300 Microsoft Azure Architect Technologies · Aug 2020</summary>
+            <p>Microsoft certification track</p>
+          </details>
+          <details open>
+            <summary>Microsoft Certified: Azure Security Engineer Associate</summary>
+            <p>Security-focused Azure credential</p>
+          </details>
+          <details open>
+            <summary>TypeScript Essential Training · Oct 2022</summary>
+            <p>LinkedIn Learning</p>
+          </details>
         </div>
       </section>
 
@@ -279,7 +267,5 @@
     <footer class="footer">
       <p>© 2025 Spyros Savvanis · savvanis.life</p>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>

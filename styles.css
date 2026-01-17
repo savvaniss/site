@@ -1,15 +1,15 @@
 :root {
-  color-scheme: light;
-  --bg: #f7f7fb;
-  --surface: #ffffff;
-  --surface-alt: #f0f1f8;
-  --text: #1b1f2a;
-  --muted: #5c6276;
-  --primary: #4f46e5;
-  --primary-soft: #e6e9ff;
-  --accent: #22b3a6;
-  --border: #e0e4f1;
-  --shadow: 0 18px 40px rgba(49, 56, 80, 0.12);
+  color-scheme: dark;
+  --bg: #1b1e2a;
+  --surface: #23273a;
+  --surface-alt: #1f2232;
+  --text: #f4f6ff;
+  --muted: #b1b7cc;
+  --primary: #7c6cff;
+  --primary-soft: #2f2b4f;
+  --accent: #3fd6c5;
+  --border: #2f344a;
+  --shadow: 0 18px 40px rgba(11, 12, 20, 0.45);
 }
 
 * {
@@ -32,7 +32,7 @@ a {
 
 .hero {
   padding: 2.5rem 6vw 4rem;
-  background: radial-gradient(circle at top, #ffffff 0%, #f3f5ff 55%, #ebefff 100%);
+  background: radial-gradient(circle at top, #2a2e43 0%, #1b1e2a 60%, #161826 100%);
 }
 
 .nav {
@@ -99,7 +99,7 @@ a {
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
   background: var(--primary-soft);
-  color: var(--primary);
+  color: #c9c4ff;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -126,7 +126,10 @@ a {
 .button.primary {
   background: var(--primary);
   color: #fff;
-  box-shadow: 0 16px 30px rgba(79, 70, 229, 0.25);
+  box-shadow: 0 0 0 3px rgba(124, 108, 255, 0.35),
+    0 18px 30px rgba(12, 12, 30, 0.5);
+  outline: 2px solid rgba(124, 108, 255, 0.6);
+  outline-offset: 2px;
 }
 
 .button.ghost {
@@ -196,96 +199,12 @@ a {
 }
 
 .pill-row span {
-  background: #eef2ff;
-  color: var(--primary);
+  background: #2e3350;
+  color: #c9c4ff;
   padding: 0.4rem 0.8rem;
   border-radius: 999px;
   font-size: 0.8rem;
   font-weight: 600;
-}
-
-.quest-card {
-  box-shadow: none;
-  background: var(--surface-alt);
-}
-
-.quest-header h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.quest-header p {
-  color: var(--muted);
-  margin-bottom: 1.5rem;
-}
-
-.level {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.level-label {
-  font-weight: 600;
-}
-
-.xp {
-  height: 10px;
-  width: 100%;
-  background: #e4e8f7;
-  border-radius: 999px;
-  overflow: hidden;
-  margin: 0.4rem 0;
-}
-
-.xp-bar {
-  height: 100%;
-  width: 0;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
-  transition: width 0.3s ease;
-}
-
-.xp-caption {
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
-.quest-list {
-  list-style: none;
-  display: grid;
-  gap: 0.75rem;
-}
-
-.quest-list li {
-  padding: 0.75rem 1rem;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  cursor: pointer;
-  transition: border 0.2s ease, transform 0.2s ease;
-}
-
-.quest-list li.completed {
-  border-color: var(--accent);
-  background: #eaf8f6;
-  text-decoration: line-through;
-  color: var(--muted);
-}
-
-.quest-list li:hover {
-  transform: translateY(-2px);
-  border-color: rgba(79, 70, 229, 0.4);
-}
-
-.badge {
-  margin-top: 1.5rem;
-  padding: 0.75rem 1rem;
-  border-radius: 12px;
-  background: #edf2ff;
-  border: 1px solid #d6dcff;
-  display: none;
 }
 
 .section {
@@ -328,7 +247,7 @@ a {
   border: 1px solid var(--border);
   border-radius: 22px;
   padding: 1.8rem;
-  box-shadow: 0 12px 25px rgba(60, 70, 120, 0.08);
+  box-shadow: 0 12px 25px rgba(9, 10, 20, 0.35);
 }
 
 .card h3 {
@@ -360,7 +279,44 @@ a {
 
 .timeline-date {
   font-weight: 700;
-  color: var(--primary);
+  color: #c9c4ff;
+}
+
+.accordion {
+  display: grid;
+  gap: 1rem;
+}
+
+.accordion details {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1rem 1.25rem;
+}
+
+.accordion summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary::after {
+  content: "+";
+  float: right;
+  color: var(--accent);
+}
+
+.accordion details[open] summary::after {
+  content: "–";
+}
+
+.accordion p {
+  color: var(--muted);
+  margin-top: 0.75rem;
 }
 
 .chip-grid {
@@ -372,7 +328,7 @@ a {
 
 .chip-grid span {
   background: var(--primary-soft);
-  color: var(--primary);
+  color: #c9c4ff;
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
   font-size: 0.85rem;
@@ -380,7 +336,7 @@ a {
 }
 
 .text-link {
-  color: var(--primary);
+  color: #c9c4ff;
   font-weight: 600;
   margin-top: 1rem;
   display: inline-flex;

@@ -6,7 +6,6 @@ services:
     volumes:
       - ./index.html:/usr/share/nginx/html/index.html:ro
       - ./styles.css:/usr/share/nginx/html/styles.css:ro
-      - ./script.js:/usr/share/nginx/html/script.js:ro
     networks:
       - proxy_net
 
