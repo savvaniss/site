@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savvanis.life — Spyros Savvanis CV</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">savvanis.life</div>
+        <div class="nav-links">
+          <a href="#profile">Profile</a>
+          <a href="#experience">Experience</a>
+          <a href="#certs">Certifications</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Lead Systems Engineer · Cloud · DevSecOps</p>
+          <h1>Spyros Savvanis</h1>
+          <p class="lead">
+            Building secure, automated cloud platforms across Azure, Linux, and
+            DevOps ecosystems. Certified Ethical Hacker, Azure Solutions
+            Architect, and LFCE.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button ghost" href="mailto:savvaniss@yahoo.gr">Email</a>
+            <a
+              class="button ghost"
+              href="https://www.linkedin.com/in/spyros-savvanis-7041549b"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
+          <div class="hero-badges">
+            <span>CEH · ECC0658973421</span>
+            <span>LFCE · LFCE-1700-0432-0200</span>
+            <span>Azure Solutions Architect Expert</span>
+          </div>
+        </div>
+        <div class="quest-card">
+          <div class="quest-header">
+            <h2>Visitor Quest Log</h2>
+            <p>Help level up the portfolio by completing quests.</p>
+          </div>
+          <div class="level">
+            <div>
+              <div class="level-label">Level <span id="level">1</span></div>
+              <div class="xp" aria-hidden="true">
+                <div id="xp-bar" class="xp-bar"></div>
+              </div>
+              <div class="xp-caption"><span id="xp">0</span>/100 XP</div>
+            </div>
+            <button id="reset" class="button ghost small">Reset</button>
+          </div>
+          <ul class="quest-list" id="quest-list">
+            <li data-xp="25">Explore the projects</li>
+            <li data-xp="20">Read the experience timeline</li>
+            <li data-xp="20">Check out certifications</li>
+            <li data-xp="15">Visit the blog</li>
+            <li data-xp="20">Send a hello email</li>
+          </ul>
+          <div class="badge" id="badge" aria-live="polite">
+            🏆 New badge unlocked: Cloud Guardian
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="profile" class="section">
+        <div class="section-title">
+          <h2>Profile</h2>
+          <p>
+            Leading teams to deliver secure, compliant, and scalable cloud
+            platforms. Focused on Azure, DevSecOps automation, and Linux
+            reliability.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Core Strengths</h3>
+            <ul>
+              <li>Azure architecture & governance</li>
+              <li>DevSecOps pipelines & IaC (Terraform)</li>
+              <li>Linux engineering & security hardening</li>
+              <li>Mentoring & cross-functional leadership</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Domain Strategy</h3>
+            <p>
+              Primary CV domain: <strong>savvanis.life</strong>. Host project demos
+              as subdomains for clarity (e.g. <strong>token.savvanis.life</strong>,
+              <strong>labs.savvanis.life</strong>), and keep the blog at
+              <strong>serverexpose.com</strong> for long-form content.
+            </p>
+            <p>
+              For new demos, reserve subdomains early and keep them consistent
+              (project name + short summary + CTA).
+            </p>
+          </article>
+          <article class="card">
+            <h3>Gamification Ideas</h3>
+            <ul>
+              <li>Quest log with XP and unlockable badges</li>
+              <li>Progress-based "journey" map through experience</li>
+              <li>Collectible icons for certifications and awards</li>
+              <li>Hidden easter eggs for visitors who explore deeper</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section alt">
+        <div class="section-title">
+          <h2>Experience</h2>
+          <p>Recent leadership roles and cloud engineering impact.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Lead Systems Engineer · EPAM Systems</h3>
+            <span>Jan 2023 – Present · Remote</span>
+            <ul>
+              <li>Mentor and lead systems engineers across delivery squads.</li>
+              <li>Drive Azure cloud strategy, CI/CD automation, and IaC.</li>
+              <li>Improve reliability, observability, and security posture.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h3>Senior Cloud Technologies Specialist · Lamda Hellix</h3>
+            <span>Oct 2021 – Jan 2023 · Athens</span>
+            <ul>
+              <li>Designed secure Azure landing zones and governance.</li>
+              <li>Enabled cloud migrations and DevOps toolchains.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h3>Linux System Administrator · Xrisi Efkeria Group</h3>
+            <span>Jan 2018 – Apr 2019 · Athens</span>
+            <ul>
+              <li>Optimized Linux infrastructure and monitoring stack.</li>
+              <li>Hardened systems and improved uptime SLAs.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="journey-map">
+          <h3>Work Journey Map</h3>
+          <ol class="journey-list">
+            <li>
+              <span class="journey-year">2010</span>
+              <div>
+                <h4>Network Administrator · Cosmos Business Systems</h4>
+                <p>
+                  Managed communications across Athens International Airport and
+                  six peripheral airports.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2013</span>
+              <div>
+                <h4>Network Administrator · WIND Hellas</h4>
+                <p>Supported core network operations and enterprise routing.</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2014</span>
+              <div>
+                <h4>Linux System Administrator · Wide Services P.C</h4>
+                <p>Azure-focused Linux operations and platform reliability.</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2017</span>
+              <div>
+                <h4>Linux System Administrator · Intelen, Inc</h4>
+                <p>AWS infrastructure operations and automation.</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2018</span>
+              <div>
+                <h4>Linux System Administrator · Xrisi Efkeria Group</h4>
+                <p>Monitoring, performance tuning, and security hardening.</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2019</span>
+              <div>
+                <h4>Cloud Technologies Specialist · Lamda Hellix</h4>
+                <p>Enterprise cloud strategy and hybrid operations.</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2023</span>
+              <div>
+                <h4>Lead Systems Engineer · EPAM Systems</h4>
+                <p>Leadership, cloud architecture, and DevSecOps execution.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="certs" class="section">
+        <div class="section-title">
+          <h2>Certifications</h2>
+          <p>Security, cloud, and data platforms.</p>
+        </div>
+        <div class="cert-grid">
+          <div class="cert">Certified Ethical Hacker (CEH)</div>
+          <div class="cert">Linux Foundation Certified Engineer (LFCE)</div>
+          <div class="cert">Azure Solutions Architect Expert</div>
+          <div class="cert">Azure DevOps Engineer Expert</div>
+          <div class="cert">Azure Security Engineer Associate</div>
+          <div class="cert">Microsoft Certified: Azure Administrator Associate</div>
+          <div class="cert">Exam 537: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack</div>
+          <div class="cert">TypeScript Essential Training</div>
+        </div>
+        <div class="journey-map compact">
+          <h3>Certification Journey Map</h3>
+          <ol class="journey-list">
+            <li>
+              <span class="journey-year">2017</span>
+              <div>
+                <h4>Linux Foundation Certified Engineer</h4>
+                <p>Credential ID LFCE-1700-0432-0200 · Issued Dec 2017</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2019</span>
+              <div>
+                <h4>Exam 537: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack</h4>
+                <p>
+                  Badge issued to <strong>Spyridon Savvanis</strong> on June 25, 2019
+                  · Issued by Microsoft.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2019</span>
+              <div>
+                <h4>Microsoft Certified: Azure Administrator Associate</h4>
+                <p>Issued Aug 2019 · Expired Aug 2021</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2019</span>
+              <div>
+                <h4>Microsoft Certified: Azure DevOps Engineer Expert</h4>
+                <p>Issued Sep 2019 · Expired Sep 2021</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2020</span>
+              <div>
+                <h4>Microsoft Certified: Azure Solutions Architect Expert</h4>
+                <p>Issued Aug 2020 · Expired Aug 2022</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2020</span>
+              <div>
+                <h4>AZ-300 Microsoft Azure Architect Technologies</h4>
+                <p>Issued Aug 2020</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2022</span>
+              <div>
+                <h4>Certified Ethical Hacker (CEH)</h4>
+                <p>Credential ID ECC0658973421 · Issued Feb 2022</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-year">2022</span>
+              <div>
+                <h4>TypeScript Essential Training</h4>
+                <p>Issued Oct 2022</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="section-title">
+          <h2>Projects & Demos</h2>
+          <p>Showcase completed work and active experiments.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>token.savvanis.life</h3>
+            <p>
+              ERC-token platform (cryptonow.cc). Add walkthroughs, security
+              notes, and deployment diagrams.
+            </p>
+            <a class="text-link" href="https://token.cryptonow.cc" target="_blank" rel="noreferrer">
+              Visit project →
+            </a>
+          </article>
+          <article class="card">
+            <h3>labs.savvanis.life</h3>
+            <p>Interactive demos for cloud automation, IaC, and DevSecOps.</p>
+            <button class="text-link" type="button">Coming soon →</button>
+          </article>
+          <article class="card">
+            <h3>serverexpose.com</h3>
+            <p>
+              Blog and deep dives on Azure, security, and infrastructure
+              reliability.
+            </p>
+            <a class="text-link" href="https://serverexpose.com" target="_blank" rel="noreferrer">
+              Read articles →
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Let’s build secure, automated platforms together.</p>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <h3>Email</h3>
+            <a href="mailto:savvaniss@yahoo.gr">savvaniss@yahoo.gr</a>
+          </div>
+          <div>
+            <h3>LinkedIn</h3>
+            <a
+              href="https://www.linkedin.com/in/spyros-savvanis-7041549b"
+              target="_blank"
+              rel="noreferrer"
+            >
+              linkedin.com/in/spyros-savvanis-7041549b
+            </a>
+          </div>
+          <div>
+            <h3>Availability</h3>
+            <p>Remote · Athens, Greece · GMT+2</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Spyros Savvanis · savvanis.life</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
