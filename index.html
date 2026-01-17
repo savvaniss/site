@@ -86,20 +86,20 @@
       <section id="overview" class="section">
         <div class="section-title">
           <h2>Overview</h2>
-          <p>What I bring to systems teams and cloud programs.</p>
+          <p>Cloud adventures, calm launches, and crisp delivery stories.</p>
         </div>
         <div class="grid two">
           <article class="card">
-            <h3>Focus areas</h3>
+            <h3>What I love building</h3>
             <ul>
-              <li>Azure architecture, governance, and landing zones</li>
-              <li>DevSecOps automation with Terraform and CI/CD</li>
-              <li>Linux reliability, observability, and security hardening</li>
-              <li>Mentorship, delivery strategy, and cross-team alignment</li>
+              <li>Cloud runways that make launches smooth and safe</li>
+              <li>DevSecOps pipelines that ship fast without drama</li>
+              <li>Linux platforms that stay calm under pressure</li>
+              <li>Teams that learn, mentor, and scale together</li>
             </ul>
           </article>
           <article class="card">
-            <h3>Domain strategy</h3>
+            <h3>How I tell the story</h3>
             <p>
               Use <strong>savvanis.life</strong> for the CV and connect demos via
               clear subdomains (ex: <strong>token.savvanis.life</strong>,
@@ -107,8 +107,8 @@
               <strong>serverexpose.com</strong> for long-form content.
             </p>
             <p>
-              Each demo should ship with a quick summary, impact highlights, and
-              a direct CTA.
+              Each demo gets a punchy summary, impact highlights, and one clear
+              CTA for the next step.
             </p>
           </article>
         </div>
@@ -164,48 +164,64 @@
       <section id="certs" class="section">
         <div class="section-title">
           <h2>Certification highlights</h2>
-          <p>All credentials grouped in an accordion list.</p>
+          <p>Swipe through every credential in a carousel.</p>
         </div>
-        <div class="accordion">
-          <details open>
-            <summary>Exam 537 Badge · June 25, 2019</summary>
-            <p>
-              Issued to <strong>Spyridon Savvanis</strong> · Configuring and
-              Operating a Hybrid Cloud with Microsoft Azure Stack.
-            </p>
-          </details>
-          <details open>
-            <summary>Linux Foundation Certified Engineer · Dec 2017</summary>
-            <p>Credential ID LFCE-1700-0432-0200</p>
-          </details>
-          <details open>
-            <summary>Certified Ethical Hacker (CEH) · Feb 2022</summary>
-            <p>Credential ID ECC0658973421</p>
-          </details>
-          <details open>
-            <summary>Microsoft Certified: Azure Administrator Associate · Aug 2019</summary>
-            <p>Expired Aug 2021</p>
-          </details>
-          <details open>
-            <summary>Microsoft Certified: Azure DevOps Engineer Expert · Sep 2019</summary>
-            <p>Expired Sep 2021</p>
-          </details>
-          <details open>
-            <summary>Microsoft Certified: Azure Solutions Architect Expert · Aug 2020</summary>
-            <p>Expired Aug 2022</p>
-          </details>
-          <details open>
-            <summary>AZ-300 Microsoft Azure Architect Technologies · Aug 2020</summary>
-            <p>Microsoft certification track</p>
-          </details>
-          <details open>
-            <summary>Microsoft Certified: Azure Security Engineer Associate</summary>
-            <p>Security-focused Azure credential</p>
-          </details>
-          <details open>
-            <summary>TypeScript Essential Training · Oct 2022</summary>
-            <p>LinkedIn Learning</p>
-          </details>
+        <div class="carousel">
+          <button class="carousel-button prev" type="button" aria-label="Scroll certifications left">
+            ‹
+          </button>
+          <div class="cert-carousel" aria-live="polite">
+            <article class="cert-card">
+              <h3>Exam 537 Badge</h3>
+              <p>
+                Issued to <strong>Spyridon Savvanis</strong> · June 25, 2019
+              </p>
+              <p>Hybrid Cloud with Microsoft Azure Stack</p>
+            </article>
+            <article class="cert-card">
+              <h3>Linux Foundation Certified Engineer</h3>
+              <p>Credential ID LFCE-1700-0432-0200</p>
+              <p>Issued Dec 2017</p>
+            </article>
+            <article class="cert-card">
+              <h3>Certified Ethical Hacker (CEH)</h3>
+              <p>Credential ID ECC0658973421</p>
+              <p>Issued Feb 2022</p>
+            </article>
+            <article class="cert-card">
+              <h3>Azure Administrator Associate</h3>
+              <p>Issued Aug 2019</p>
+              <p>Expired Aug 2021</p>
+            </article>
+            <article class="cert-card">
+              <h3>Azure DevOps Engineer Expert</h3>
+              <p>Issued Sep 2019</p>
+              <p>Expired Sep 2021</p>
+            </article>
+            <article class="cert-card">
+              <h3>Azure Solutions Architect Expert</h3>
+              <p>Issued Aug 2020</p>
+              <p>Expired Aug 2022</p>
+            </article>
+            <article class="cert-card">
+              <h3>AZ-300 Azure Architect Technologies</h3>
+              <p>Issued Aug 2020</p>
+              <p>Microsoft certification track</p>
+            </article>
+            <article class="cert-card">
+              <h3>Azure Security Engineer Associate</h3>
+              <p>Security-focused Azure credential</p>
+              <p>Microsoft certification</p>
+            </article>
+            <article class="cert-card">
+              <h3>TypeScript Essential Training</h3>
+              <p>Issued Oct 2022</p>
+              <p>LinkedIn Learning</p>
+            </article>
+          </div>
+          <button class="carousel-button next" type="button" aria-label="Scroll certifications right">
+            ›
+          </button>
         </div>
       </section>
 
@@ -265,7 +281,8 @@
     </main>
 
     <footer class="footer">
-      <p>© 2025 Spyros Savvanis · savvanis.life</p>
+      <p>© <span id="year">2025</span> Spyros Savvanis · savvanis.life</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
